@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["../src/index.js"],"sourcesContent":["export function logger(...args) {\n  console.log(...args);\n}\n"],"names":[],"mappings":"AAAO,SAAS,MAAM,CAAC,GAAG,IAAI,EAAE;AAChC,EAAE,OAAO,CAAC,GAAG,CAAC,GAAG,IAAI,CAAC,CAAC;AACvB;;;;"}

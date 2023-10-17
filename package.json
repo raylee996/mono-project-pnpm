@@ -5,7 +5,10 @@
   "description": "pnpm monorepo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-all": "run-s build:utils build:core",
+    "build-all-p": "run-p build:*",
+    "build:core": "pnpm run build --filter=core",
+    "build:utils": "pnpm run build --filter=utils"
   },
   "workspaces": [
     "packages/*"
@@ -13,6 +16,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@changesets/cli": "^2.26.2"
+    "@changesets/cli": "^2.26.2",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^4.1.4"
   }
 }

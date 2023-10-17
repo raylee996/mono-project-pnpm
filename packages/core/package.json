@@ -1,14 +1,24 @@
 {
   "name": "core",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bundle.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "utils": "workspace:^0.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "utils": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.1.4",
+    "tsconfig": "workspace:^0.0.0",
+    "typescript": "^5.2.2"
   }
 }

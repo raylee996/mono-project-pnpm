@@ -1,0 +1,6 @@
+{
+  "extends": "tsconfig/core.tsconfig.json",
+  "include": [
+    "src/**/*.tsx"
+  ]
+}
